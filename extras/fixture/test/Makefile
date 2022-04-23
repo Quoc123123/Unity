@@ -15,7 +15,8 @@ INC_DIR = -I../src -I../../../src/
 BUILD_DIR = ../build
 TARGET = ../build/fixture_tests.exe
 
-all: default noStdlibMalloc 32bits
+# all: default noStdlibMalloc 32bits
+all: default
 
 default: $(BUILD_DIR)
 	$(CC) $(CFLAGS) $(DEFINES) $(SRC) $(INC_DIR) -o $(TARGET) -D UNITY_SUPPORT_64
